@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Jovian</title>
+        <link rel = "stylesheet" href = "style.css"/>
+        <link rel = "icon" href = "C:\Users\dcode\web\1796c8b8bb1b574211e3d4a3f0191524.png" type = "image/x-icon">
+        <!--fonts/Jersey 10-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+        <!--end of fonts-->
+
+    </head>
+    <body>
+        <div id = "navbar">
+            <img id = "Jovian-logo" alt = "JovianLogo" src = "https://bookface-images.s3.amazonaws.com/logos/9c630503bfaf09e017d40c97dae09e6521a73c2d.png"/>
+        </div>
+        
+        
+        <img id = "banner" alt = "banner" src = "https://images.unsplash.com/photo-1504805572947-34fad45aed93?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZG8lMjBzb21ldGhpbmclMjBncmVhdHxlbnwwfHwwfHx8MA%3D%3D"/>
+        
+        
+        <h2>About Jovian</h2>
+
+
+        <div id = "about">
+            <div id = "description">
+                <p>At Jovian, we're on a mission to build
+                    the world's most highly reputed technical
+                    university, and we're building completely
+                    online. We offer several beginner friendly
+                    courses that are taken by 300,000+ registered
+                    users.</p>
+                <h4>We also offer 2 courses : </h4>
+                <ol>
+                    <li>
+                        <a title = "Full stack development" href = "https://www.jovian.com/full-stack-developer-bootcamp" target = "_blank">Full Stack Developer Bootcamp</a>
+                    </li>
+                    <li>
+                        <a title = "Data Science" href = "https://www.jovian.com/data-science-bootcamp" target = "_blank">Data Science Bootcamp</a>
+                    </li>
+                </ol>
+            </div>
+            <img id = "teamImage" alt = "team Image" src = "https://www.greatplacetowork.ca/images/Asset_3.webp"/>
+        </div>
+
+        <h2>Job Opportunities</h2>
+
+        <div id = "jobs">
+
+            <table id = "jobs-table">
+                <tr class = "header-row">
+                    <th rowspan = "2">Job Title</th>
+                    <th colspan = "2">Location</th>
+                    <th rowspan = "2">Salary</th>
+                    <th rowspan = "2">Posted On</th>
+                </tr>
+                <tr class = "header-row">
+                    <th>City</th>
+                    <th>Country</th>
+                </tr>
+                <tr class = "data-points">
+                    <td>Front-End Developer</td>
+                    <td>Bangaluru</td>
+                    <td>India</td>
+                    <td>$12,0000</td>
+                    <td>May 5 2024</td>
+                </tr>
+
+                <tr class = "data-points">
+                    <td>Back-End Developer</td>
+                    <td>Chennai</td>
+                    <td>India</td>
+                    <td>$3,000</td>
+                    <td>January 6 2024</td>
+                </tr>
+
+                <tr class = "data-points">
+                    <td>Machine Learning Engineer</td>
+                    <td colspan = "2">Remote</td>
+                    <td>$70,000</td>
+                    <td>June 6 2024</td>
+                </tr>
+
+                <tr class = "data-points">
+                    <td>Data Scientist</td>
+                    <td>Chennai</td>
+                    <td>India</td>
+                    <td>$60,0000</td>
+                    <td>March 7 2023</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <div id = "application">
+
+            <h3>Submit Your Application</h3>
+
+            <form class = "application-form">
+                <div class = "form-group">
+                    <label for = "name">Full Name</label><br>
+                    <input id = "name" type = "text" name = "Full Name" required>
+                </div>
+                
+                <div class = "form-group">
+                    <label for = "Email">Email</label><br>
+                    <input  id = "Email" type = "text" name = "Email" required>
+                </div>
+
+                <div class = "form-group">
+                    <label for = "number">Phone Number</label><br>
+                    <input id = "number" type = "number" name = "Phone Number" required placeholder = "+91">
+                </div>
+
+                <div class = "form-group">
+                    <label for  = "dob">DateOfBirth</label><br>
+                    <input id = "dob" type = "date" name = "dob" required>
+                </div>
+
+                <div class = "form-group">
+                    <label for = "position">Position Applied For</label><br>
+                    <select id = "position" name = "Position Applied" required>
+                        <option value = "">Select Option</option>
+                        <option value = "front-end developer">Front-End Developer</option>
+                        <option value = "back-end developer">Back-End Developer</option>
+                        <option value = "data scientist">Data Scientist</option>
+                        <option value = "ml engineer">Machine Learning Engineer</option>
+                    </select>
+                </div>
+
+                <div class = "form-group">
+                    <label for = "file-upload">Upload</label><br>
+                    <input id = "file-upload" type = "file" name = "file" accept = ".pdf , .doc , .docx" >
+                </div>
+
+                <div class = "form-group">
+                    <label for = "resume">Resume</label><br>
+                    <textarea id = "resume" name = "resume" rows = 5 placeholder = "Explain why you want the job"></textarea>
+                </div>
+
+                <div class = "form-group">
+                    <label for = "t&C">
+                        <input type = "checkbox" id = "t&C" name = "terms" required>
+                        I agree to the terms and conditions.
+                    </label>
+                </div>
+
+                <div class = "form-group" action = "https://www.google.com/" method = "POST">
+                    <input type = "submit" value = "Submit Application">
+                </div>
+
+            </form>
+        </div>
+
+        <div id = "footer">
+            <ul id = "footer-links">
+                <li>
+                    <a href = "https://jovian.com/">Courses</a>
+                </li>
+
+                <li>
+                    <a href = "https://jovian.com/">Programs</a>
+                </li>
+
+                <li>
+                    <a href = "https://www.youtube.com/watch?v=dX8396ZmSPk&t=8394s">YouTube</a>
+                </li>
+            </ul>
+
+            <div id = "copyright">
+                <h5>©2024 , Dakshin</h5>
+            </div>
+        </div>
+    </body>
+</html>

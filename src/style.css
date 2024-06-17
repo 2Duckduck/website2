@@ -1,0 +1,158 @@
+* {
+  font-size: 16px;
+  padding: 3px;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: sans-serif;
+  text-align: justify;
+  line-height: 2;
+  font-size: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+#navbar {
+  background-color: ghostwhite;
+  height: 42px;
+  width: auto;
+  padding: 0px 10px;
+}
+
+#Jovian-logo {
+  height: 50px;
+}
+
+h2 {
+  text-align: center;
+  padding: 0px 8px;
+  font-size: 3rem;
+}
+
+#banner {
+  height: 300px;
+  width: 100%;
+}
+
+#teamImage {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+#about {
+  display: flex;
+  padding: 0px 8px;
+}
+
+#description {
+  max-width: 50%;
+  padding: 0px 8px;
+  font-size: 2.25rem;
+}
+
+#jobs {
+  padding: 0px 8px;
+  object-fit: cover;
+}
+
+#application {
+  max-width: 50%;
+}
+
+.form-group textarea {
+  width: 50%;
+  height: 50%;
+}
+
+.form-group input[type="checkbox"] {
+  height: 16px;
+  width: 16px;
+}
+
+.application-form label {
+  padding: 10px 0px;
+}
+
+.form-group input[type="submit"] {
+  background-color: aliceblue;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(54, 109, 158);
+  color: white;
+}
+
+.application-form input,
+select {
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.location {
+  color: grey;
+  font-size: 15px;
+  padding: 0px 8px;
+}
+
+.apply {
+  padding: 20px 20px;
+  float: right;
+}
+
+a {
+  text-decoration: none;
+  color: #0284c7;
+}
+
+a:hover {
+  color: #075985;
+}
+#footer {
+  padding: 0px;
+  /* object-fit: cover; */
+  background-color: ghostwhite;
+  text-align: center;
+}
+
+#footer-links {
+  list-style: none;
+  padding-top: 40px;
+}
+
+#footer-links li {
+  display: inline;
+  padding-right: 80px;
+}
+
+#copyright {
+  font-size: 20px;
+  color: lightgrey;
+}
+
+#jobs-table {
+  width: 100%;
+  border: 1px solid grey;
+  border-collapse: collapse;
+}
+
+.header-row th {
+  border: 1px solid grey;
+  padding: 8px;
+  background-color: #e0f2fe;
+}
+
+.data-points td {
+  border-right: 1px solid grey;
+  padding: 8px;
+}
+
+#jobs-table tr:nth-child(odd) {
+  background-color: #f0f9ff;
+}
