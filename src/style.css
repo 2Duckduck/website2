@@ -1,82 +1,65 @@
-* {
-  font-size: 16px;
-  padding: 3px;
+
+/*Small- devices (Phone)*/
+
+html {
+  font-size: 14px;
+  padding : 0px;
+  margin : 0px;
+  border : 0px;
 }
 
 body {
-  padding: 0px;
-  margin: 0px;
   font-family: sans-serif;
   text-align: justify;
   line-height: 2;
-  font-size: 1rem;
 }
 
-h2 {
-  font-size: 2rem;
+h1 { font-size: 2.5em; text-align: center; }
+h2 { font-size: 2em; text-align: center; }
+h3 { font-size: 1.75em; }
+h4 { font-size: 1.5em; }
+h5 { font-size: 1.25em; }
+h6 { font-size: 1em; }
+
+a {
+  text-decoration: none;
+  color: #0284c7;
 }
 
-#navbar {
-  background-color: ghostwhite;
-  height: 42px;
-  width: auto;
-  padding: 0px 10px;
+a:hover a:focus{
+  color: #075985;
 }
 
 #Jovian-logo {
-  height: 50px;
-}
-
-h2 {
-  text-align: center;
-  padding: 0px 8px;
-  font-size: 3rem;
+  display : none;
 }
 
 #banner {
-  height: 300px;
-  width: 100%;
-}
-
-#teamImage {
-  height: 300px;
-  width: 300px;
+  height : 150px;
   object-fit: cover;
-  border-radius: 10px;
+  width : 100%;
 }
 
 #about {
-  display: flex;
-  padding: 0px 8px;
+  display : flex;
+  flex-direction : column;
+
 }
 
-#description {
-  max-width: 50%;
-  padding: 0px 8px;
-  font-size: 2.25rem;
+#teamImage{
+  height : 15em;
+  width : 100%;
 }
 
-#jobs {
-  padding: 0px 8px;
-  object-fit: cover;
+.form-group input,textarea{
+  width : 100%;
 }
 
-#application {
-  max-width: 50%;
-}
 
-.form-group textarea {
-  width: 50%;
-  height: 50%;
-}
 
 .form-group input[type="checkbox"] {
   height: 16px;
   width: 16px;
-}
-
-.application-form label {
-  padding: 10px 0px;
 }
 
 .form-group input[type="submit"] {
@@ -95,45 +78,20 @@ select {
   border-radius: 5px;
 }
 
-.location {
+
+#jobs-table {
+  display : none;
+}
+
+.job{
+  padding-left : 10px;
+  border : 1px solid skyblue;
+  background-color: rgb(232, 243, 248);
+  margin-bottom : 5px;
+}
+
+.job-detail {
   color: grey;
-  font-size: 15px;
-  padding: 0px 8px;
-}
-
-.apply {
-  padding: 20px 20px;
-  float: right;
-}
-
-a {
-  text-decoration: none;
-  color: #0284c7;
-}
-
-a:hover {
-  color: #075985;
-}
-#footer {
-  padding: 0px;
-  /* object-fit: cover; */
-  background-color: ghostwhite;
-  text-align: center;
-}
-
-#footer-links {
-  list-style: none;
-  padding-top: 40px;
-}
-
-#footer-links li {
-  display: inline;
-  padding-right: 80px;
-}
-
-#copyright {
-  font-size: 20px;
-  color: lightgrey;
 }
 
 #jobs-table {
@@ -155,4 +113,280 @@ a:hover {
 
 #jobs-table tr:nth-child(odd) {
   background-color: #f0f9ff;
+}
+
+
+#footer  {
+  text-align : center;
+  object-fit: cover;
+  background-color: ghostwhite;
+}
+
+#footer-links {
+  padding : 0px;
+  list-style: none;
+  padding-top: 5px;
+}
+
+#copyright {
+  font-size : 0.8rem;
+  color: lightgrey;
+}
+
+
+
+/* Small devices (tablets) */
+@media screen and (min-width: 425px) {
+  html{
+    font-size : 16px;
+  }
+
+  #Jovian-logo {
+    display : initial;
+    height : 5em;
+    width : 10em;
+  }
+
+  #solo-jovian-logo {
+    display:none;
+  }
+
+  #banner {
+    height: 250px;
+    width: 100%;
+  }
+
+  #about {
+    flex-direction : row;
+  }
+
+  #description {
+    max-width : 40em;
+  }
+
+  #teamImage {
+    padding-left : 8px;
+    height : 20em;
+    width : 20em;
+    object-fit: cover;
+    border-radius: 2em;
+  }
+
+  #jobs-table {
+    display : table;
+  }
+
+  #jobs-list{
+    display : none;
+  }
+
+  .form-group input,textarea{
+    width : 45%;
+  }
+  
+
+  #footer {
+    padding: 0px;
+    object-fit: cover;
+    background-color: ghostwhite;
+    text-align: center;
+  }
+  
+  #footer-links {
+    list-style: none;
+    padding-top: 10px;
+  }
+
+  #footer-links li {
+    display : inline;
+    padding-right : 10px;
+  }
+  
+  #copyright {
+    font-size : 0.8em;
+    color: lightgrey;
+  }
+  
+
+}
+
+/* Medium devices (laptops) */
+@media screen and (min-width: 768px) {
+  html{
+    font-size : 20px;
+  }
+
+  #Jovian-logo {
+    display : initial;
+  }
+
+  #solo-jovian-logo {
+    display:none;
+  }
+
+  #Jovian-logo {
+    height: 50px;
+    width : 100px;
+  }
+
+  #banner {
+    height: 350px;
+    width: 100%;
+  }
+
+  #teamImage {
+    height: 25em;
+    width: 25em;
+    padding : 10px;
+    object-fit: cover;
+    border-radius: 2em;
+  }
+
+  #about {
+    flex-direction : row;
+    width : 100%;
+  }
+  
+  #footer {
+    padding: 0px;
+    object-fit: cover;
+    background-color: ghostwhite;
+    text-align: center;
+  }
+  
+  #footer-links {
+    list-style: none;
+    padding-top: 10px;
+  }
+
+  #footer-links li {
+    display: inline;
+    text-align : center;
+  }
+  
+  #copyright {
+    font-size : 0.8em;
+    color: lightgrey;
+  }
+  
+
+}
+
+/* Large devices (desktops) */
+@media screen and (min-width: 1025px) {
+  html{
+    font-size : 20px;
+  }
+
+  #Jovian-logo {
+    display : initial;
+  }
+
+  #solo-jovian-logo {
+    display:none;
+  }
+
+  #Jovian-logo {
+    height: 50px;
+  }
+
+  #banner {
+    height: 500px;
+    width: 100%;
+  }
+
+  #teamImage {
+    height: 15em;
+    width: 15em;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+  #about {
+    display: flex;
+    padding: 0px 8px;
+  }
+
+  #footer {
+    padding: 0px;
+    object-fit: cover;
+    background-color: ghostwhite;
+    text-align: center;
+  }
+  
+  #footer-links {
+    list-style: none;
+    padding-top: 40px;
+  }
+
+  #footer-links li {
+    display: inline;
+    padding-right: 80px;
+  }
+  
+  #copyright {
+    font-size : 0.8rem;
+    color: lightgrey;
+  }
+  
+
+}
+
+/* Extra large devices (large desktops) */
+@media screen and (min-width: 1440px) {
+  html{
+    font-size : 30px;
+  }
+
+  #Jovian-logo {
+    display : initial;
+  }
+
+  #solo-jovian-logo {
+    display:none;
+  }
+
+  #Jovian-logo {
+    height: 100px;
+  }
+
+  #banner {
+    height: 500px;
+    width: 100%;
+  }
+
+  #teamImage {
+    height: 20em;
+    width: 20em;
+    object-fit: cover;
+    border-radius: 25px;
+  }
+
+  #about {
+    display: flex;
+    padding: 0px 8px;
+  }
+  
+  #footer {
+    padding-right: 50%;
+    object-fit: cover;
+    background-color: ghostwhite;
+  }
+  
+  #footer-links {
+    list-style: none;
+    padding-top: 40px;
+  }
+  
+  #footer-links li {
+    display: inline;
+    padding-right: 80px;
+  }
+
+  #copyright {
+    font-size : 0.8rem;
+    color: lightgrey;
+  }
+  
+
 }
